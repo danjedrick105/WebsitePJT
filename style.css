@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 
 header {
@@ -43,7 +44,12 @@ section {
 }
 
 h1 {
-    color: #333;
+    color: #000000;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+
 }
 
 footer {
@@ -60,8 +66,10 @@ footer {
     float: left;
 }
 img {
-    margin-top: -300px;
     float: right;
+    width: 200px;
+    height: 200px;
+    
 }
 p{
     float: left;
@@ -79,3 +87,15 @@ p{
 p {
     color: black;
 }
+
+.collage {
+    display: grid; /* This will create a grid layout */
+    grid-template-columns: repeat(4, 1fr); /* 3 equal-width columns */
+    gap: 15px; /* Spacing between blocks */
+  }
+  
+  .text-block {
+    background-color: rgb(37, 36, 36);
+    padding: 5px;
+    text-align: center; /* Align text in the center */
+  }

@@ -1,3 +1,4 @@
+
 const canvas = document.getElementById('drawingCanvas');
 const ctx = canvas.getContext('2d');
 const clearButton = document.getElementById('clearButton');
@@ -221,3 +222,11 @@ function redrawCanvas() {
 ctx.lineWidth = penSizeSlider.value;
 ctx.lineCap = 'round';
 ctx.strokeStyle = color;
+
+$('body').on('click', '.dashboard_leftNav_category a', function() {
+    var link = $(this).attr('showSection'); //changed from let link
+    var show = $('[section="'+link+'"]');
+    $('[section]').hide();
+    $('body').find(show).fadeIn();
+    $('html,body').scrollTop(0);
+  });

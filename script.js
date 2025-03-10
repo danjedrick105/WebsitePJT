@@ -171,7 +171,7 @@ function isDistinctFreehandPath(history, path) {
 
 // Function to check if the current shape is distinct from the last one in history
 function isDistinctShape(history, shape) {
-    if (history.length === 0) return true;  // First shape is always distinct
+    if (history.length === 0) return false;  // First shape is always distinct
     const lastShape = history[history.length - 1];
     // Shapes are distinct if they have different type or coordinates
     if (lastShape.type !== shape.type) return true;

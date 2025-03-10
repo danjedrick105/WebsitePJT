@@ -29,29 +29,6 @@ nav a {
     text-decoration: none;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    float: right;
-    padding: 20px;
-}
-
-section {
-    background-color: #f7f7f7;
-    padding: 20px;
-    margin-bottom: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    color: #000000;
-}
-
-h2 {
-    color: rgb(255, 255, 255);
-
-}
-
 footer {
     background-color: #333;
     color: #fff;
@@ -65,37 +42,3 @@ footer {
     padding: 15px;
     float: left;
 }
-img {
-    float: right;
-    width: 200px;
-    height: 200px;
-    
-}
-p{
-    float: left;
-}   
-.dropdown_menu {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: black;
-}
-.dropdown_menu ul {
-    display: block;
-}
-p {
-    color: black;
-}
-
-.collage {
-    display: grid; /* This will create a grid layout */
-    grid-template-columns: repeat(4, 1fr); /* 3 equal-width columns */
-    gap: 15px; /* Spacing between blocks */
-  }
-  
-  .text-block {
-    background-color: rgb(37, 36, 36);
-    padding: 5px;
-    text-align: center; /* Align text in the center */
-  }

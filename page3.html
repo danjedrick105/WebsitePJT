@@ -23,8 +23,9 @@
         </nav>
     </header>
     
-       <canvas id="drawingCanvas" width="600" height="350"></canvas>
+       <canvas id="drawingCanvas" width="800" height="500"></canvas>
         <div class="controls">
+        <button id="eraserButton">Eraser</button>
         <button id="clearButton"> Clear </button>
         <button id="undoButton"> Undo </button>
         <input type="color" id="colorPicker" value="#000000">
@@ -35,13 +36,15 @@
             <option value="line">Line</option>
         </select>
         <button id="rulerButton" class="ruler">Ruler</button>
+        <label for="penSize">Pen Size:</label>
+        <input type="range" id="penSize" min="1" max="20" value="5">
+        <span id="penSizeValue">5</span>
        </div>
-
-       <footer>
-        <marquee behavior="" direction="right">Copyright TechDraw 2025. All right reserved.</marquee>
-    </footer>
       
-        </body>
-        
-   <script src="script.js"></script>
+        <script src="script.js"></script>
+
+        <footer>
+            <marquee behavior="" direction="right">Copyright TechDraw 2025. All right reserved.</marquee>
+        </footer>
+      </body>
       </html>

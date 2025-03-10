@@ -20,6 +20,9 @@ let rulerMode = false; // To check if ruler mode is enabled
 let eraserMode = false; // To check if eraser mode is enabled
 let startX, startY; // For storing the starting point of shapes
 
+canvas.width = window.innerWidth * 0.8;
+canvas.height = window.innerHeight * 0.7;
+
 // Function to handle mouse/touch position
 function getPosition(e) {
     const rect = canvas.getBoundingClientRect();

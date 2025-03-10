@@ -21,6 +21,8 @@ let rulerMode = false; // To check if ruler mode is enabled
 let eraserMode = false; // To check if eraser mode is enabled
 let startX, startY; // For storing the starting point of shapes
 
+
+
 // Start drawing on mouse down
 canvas.addEventListener('mousedown', (e) => {
     drawing = true;
@@ -101,6 +103,7 @@ canvas.addEventListener('mouseup', () => {
             shapeHistory.push(shape);  // Add the shape to history
         }
     }
+    
     drawing = false;
     currentPath = [];  // Reset the current path
 });
@@ -223,10 +226,9 @@ ctx.lineWidth = penSizeSlider.value;
 ctx.lineCap = 'round';
 ctx.strokeStyle = color;
 
-$('body').on('click', '.dashboard_leftNav_category a', function() {
-    var link = $(this).attr('showSection'); //changed from let link
-    var show = $('[section="'+link+'"]');
-    $('[section]').hide();
-    $('body').find(show).fadeIn();
-    $('html,body').scrollTop(0);
-  });
+if (e.originalEvent.targetTouches[0] !== undefined && e.originalEvent.targetTouches[0].pageX!==undefined){
+    e.pageX = e.originalEvent.targetTouches[0].pageX;
+}
+if (e.originalEvent.targetTouches[0] !== undefined &&e.originalEvent.targetTouches[0].pageY){
+    e.pageY = e.originalEvent.targetTouches[0].pageY;
+}
